@@ -1,0 +1,28 @@
+{
+  "audit_date": "2026-11-12",
+  "scope": "Files selected by deployment configuration were compared with training exports; this does not independently measure live request accuracy.",
+  "formula": {
+    "model": "PP-FormulaNet_plus-S r1 epoch3",
+    "selected_file_sha256": "3f07f6aa1bfce9012b32de6e9eba40f3a0ebd3adedb165244378e63ab9a3d305",
+    "training_export_sha256": "3f07f6aa1bfce9012b32de6e9eba40f3a0ebd3adedb165244378e63ab9a3d305",
+    "match": true
+  },
+  "asr": {
+    "model": "Qwen3-ASR-1.7B v27 merged8000",
+    "selected_file_sha256": "1152b401d7ff4022f0ca5a9279cb5d4d5b79512a3c635a0bcb59a1293857ec49",
+    "training_export_sha256": "1152b401d7ff4022f0ca5a9279cb5d4d5b79512a3c635a0bcb59a1293857ec49",
+    "match": true
+  },
+  "layout": {
+    "selected_file_family": "older fine-tuned v2",
+    "selected_file_sha256": "733ebbb73948f967cf5848af6eac9dc9d3096dea1f400a5a98d59871f942b32c",
+    "reported_benchmark": "large-v3 candidate",
+    "active_model_changed": false
+  },
+  "ocr": {
+    "selected_rec_file_sha256": "5c757d73648bc03cd6f04a609de648487dfecf6cfe3f6a3517067a493a94cc11",
+    "historical_v2_export_sha256": "e593562ed694b75c3fa94394db0d6343bbf8ae4af482435066b9ebbe588ef4d2",
+    "match": false,
+    "interpretation": "Historical v2 benchmark is not labeled as current deployment performance."
+  }
+}

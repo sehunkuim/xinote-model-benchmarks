@@ -1,0 +1,245 @@
+{
+  "OCR-v5": {
+    "det": {
+      "Optimizer": {
+        "name": "Adam",
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "lr": {
+          "name": "Cosine",
+          "learning_rate": 0.0001,
+          "warmup_epoch": 1
+        },
+        "regularizer": {
+          "name": "L2",
+          "factor": 5e-05
+        }
+      },
+      "Loss": {
+        "name": "DBLoss",
+        "balance_loss": true,
+        "main_loss_type": "DiceLoss",
+        "alpha": 5,
+        "beta": 10,
+        "ohem_ratio": 3
+      },
+      "epoch_num": 20,
+      "batch": 8
+    },
+    "rec": {
+      "Optimizer": {
+        "name": "Adam",
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "lr": {
+          "name": "Cosine",
+          "learning_rate": 5e-05,
+          "warmup_epoch": 1
+        },
+        "regularizer": {
+          "name": "L2",
+          "factor": 3e-05
+        }
+      },
+      "Loss": {
+        "name": "MultiLoss",
+        "loss_config_list": [
+          {
+            "CTCLoss": null
+          },
+          {
+            "NRTRLoss": null
+          }
+        ]
+      },
+      "epoch_num": 6,
+      "batch": 32
+    }
+  },
+  "OCR-v6": {
+    "config": {
+      "epochs": 4,
+      "minimum_epochs": 1,
+      "batch_size_per_gpu": 32,
+      "samples_per_epoch": 64000,
+      "learning_rate": 1e-05,
+      "warmup_steps": 200,
+      "validation_every_steps": 250,
+      "patience_validations": 5,
+      "workers": 3,
+      "precision": "FP32",
+      "dictionary_classes": 25924,
+      "max_label_length": 80,
+      "freeze_backbone": false,
+      "freeze_direction": true,
+      "backbone_lr_multiplier": 0.05,
+      "encoder_lr_multiplier": 0.5,
+      "document_fraction": 0.8,
+      "distillation_weight": 3.0,
+      "input_widths": [
+        640
+      ]
+    },
+    "loss": "length-normalized CTC + 0.2 * direction CE + 3 * replay-only teacher KL"
+  },
+  "Formula": {
+    "Global": {
+      "epoch_num": 3,
+      "use_amp": true,
+      "amp_level": "O1",
+      "scale_loss": 1024.0
+    },
+    "Loss": {
+      "name": "PPFormulaNet_S_Loss",
+      "parallel_step": 3
+    },
+    "Optimizer": {
+      "name": "AdamW",
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "weight_decay": 0.05,
+      "lr": {
+        "name": "LinearWarmupCosine",
+        "learning_rate": 5e-05,
+        "warmup_steps": 1000,
+        "start_lr": 1e-06,
+        "min_lr": 1e-07
+      }
+    },
+    "batch": 24
+  },
+  "Layout": {
+    "loss": "ConsistencyDINOLoss: VFL + L1 + GIoU + auxiliary/denoising",
+    "loss_coefficients": [
+      1,
+      5,
+      2
+    ],
+    "matching_coefficients": [
+      2,
+      5,
+      2
+    ],
+    "optimizer": "AdamW",
+    "lr": 2e-05,
+    "warmup_steps": 500,
+    "batch_per_gpu": 4,
+    "world_size": 4,
+    "weight_decay": 0.0001,
+    "gradient_clip": 1.0,
+    "active_training_seconds": 21600.316117248032,
+    "completed_steps": 45242,
+    "selected_step": 35000
+  },
+  "ASR-v27": {
+    "lr": 2e-05,
+    "audio_lr": 1.2e-05,
+    "lora_r": 64,
+    "lora_alpha": 128,
+    "lora_dropout": 0.05,
+    "min_lr_ratio": 0.1,
+    "warmup": 200,
+    "max_steps": 8000,
+    "batch_audio_sec": 720.0,
+    "max_batch": 144,
+    "accum": 1,
+    "buffer": 1024,
+    "num_workers": 12,
+    "eval_every": 4000,
+    "eval_limit": 20,
+    "chunk_sec": 1.0,
+    "unfixed_chunks": 2,
+    "unfixed_tokens": 5,
+    "end_tolerance": 0.08,
+    "offline_prob": 0.35,
+    "auto_prob": 1.0,
+    "freeze_audio": false,
+    "audio_full": false,
+    "train_new_embed_from": 41485,
+    "embed_lr": 0.0001,
+    "aug_prob": 0.1,
+    "reverb_prob": 0.45,
+    "noise_prob": 0.45,
+    "noise_snr_lo": -3.0,
+    "noise_snr_hi": 20.0,
+    "canon": 1,
+    "mask_ambiguous": 1,
+    "pref_weight": 0.3,
+    "alt_prob": 0.0,
+    "tag_same_prob": 0.3,
+    "st_eval_limit": 15,
+    "st_max_new_tokens": 448,
+    "eval_auto": true,
+    "eval_first_line": true,
+    "eval_warmup_sec": 6.0,
+    "inline_eval": 1,
+    "start_step": 0,
+    "eval_at_start": 0,
+    "seed": 20261006,
+    "smoke": 0
+  },
+  "ASR-0.6B": {
+    "lr": 6e-05,
+    "audio_lr": 3e-05,
+    "lora_r": 64,
+    "lora_alpha": 128,
+    "lora_dropout": 0.05,
+    "min_lr_ratio": 0.1,
+    "warmup": 200,
+    "max_steps": 6000,
+    "batch_audio_sec": 480.0,
+    "max_batch": 96,
+    "accum": 1,
+    "buffer": 768,
+    "num_workers": 8,
+    "eval_every": 750,
+    "eval_limit": 150,
+    "chunk_sec": 1.0,
+    "unfixed_chunks": 2,
+    "unfixed_tokens": 5,
+    "end_tolerance": 0.08,
+    "offline_prob": 0.3,
+    "auto_prob": 0.15,
+    "freeze_audio": false,
+    "seed": 20260929,
+    "smoke": 0
+  },
+  "JEV": {
+    "revision": null,
+    "epochs": 1,
+    "lr": 5e-05,
+    "warmup": 100,
+    "accumulate": 8,
+    "batch_size": 1,
+    "token_budget": 0,
+    "no_checkpointing": false,
+    "clip": 1.0,
+    "rank": 64,
+    "alpha": 128.0,
+    "max_length": 4096,
+    "dev2_cases": 400,
+    "pad_multiple": 0,
+    "pixels": 400000,
+    "dev_every": 400,
+    "save_every": 100,
+    "dev_cases": 300,
+    "limit": 0,
+    "seed": 0,
+    "readout_codes": 256,
+    "world_size": 1,
+    "train_cases": 32137,
+    "loss": "cross-entropy over float32 candidate-label logits at the served decision position; no label smoothing",
+    "targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "in_proj_qkv",
+      "in_proj_z",
+      "out_proj"
+    ]
+  }
+}

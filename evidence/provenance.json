@@ -1,0 +1,102 @@
+{
+  "audit_date": "2026-11-12",
+  "scope": "Private source files are represented only by opaque IDs and SHA-256 fingerprints. No raw examples, data paths, training code or weights are included.",
+  "sources": [
+    {
+      "id": "ASR-v27-config",
+      "sha256": "b32ccb838db331a95dd8aa5882114e23278c9259d93b625c7848f119cef9f592"
+    },
+    {
+      "id": "ASR-06-config",
+      "sha256": "f98ba580182975d9ca34fa90b04e3b6c7a0e68dfaaadd7b03b6c05d4fa8a3860"
+    },
+    {
+      "id": "ASR-v26-eval",
+      "sha256": "55cc91e2bebc22860f50075b272b17245cc659e90c8c9b8e79d70932de214d27"
+    },
+    {
+      "id": "ASR-v27-eval",
+      "sha256": "2b1495ae2dbffb8a5fbd2055254a1abfecddfe5d4cdabceea0c1ef747b82d835"
+    },
+    {
+      "id": "asr06_before",
+      "sha256": "2ac51f33fbc15a70c558a2b36d3bbd7c24c4784bf78d643f9b63d5b8a3e4d852"
+    },
+    {
+      "id": "asr06_after",
+      "sha256": "dc2be6e50262c6dc8b51ab83a18cefd731a54f3f9210e4b4edab6d081261ed0f"
+    },
+    {
+      "id": "JEV-v3-config",
+      "sha256": "3c03efb8b5eeb6303dd9c2096e06ae7d5f2acf0caeb27c24afb980d22d0f1f6d"
+    },
+    {
+      "id": "JEV-v3-log",
+      "sha256": "2e499e9de21fa9e2d0d0c02db42953e64ca318a17226ed3c1a44425bb2e5d27e"
+    },
+    {
+      "id": "FORMULA-r1-config",
+      "sha256": "967cbcf60e85a4172321c4b46b6dfbacf8a05a9a807c249658093df806d40e35"
+    },
+    {
+      "id": "formula_official",
+      "sha256": "2014f25dddbeeb1e548f2c5a745e938bd054f91b72f0fe85053549f0eb954c62"
+    },
+    {
+      "id": "formula_official_target",
+      "sha256": "82c1d1f03a294bcf447e7cf01c1fee0b479f093844ec0fcb2eb232d598a48bda"
+    },
+    {
+      "id": "formula_previous",
+      "sha256": "34fafbafe36d551a8754759c96f6266b68e7c0af7a5a679522a96e1efbc3de06"
+    },
+    {
+      "id": "formula_after",
+      "sha256": "5d4d36e4828c8779f7b7922c7457a970e4204d64d6637a7820645746e0ac5c2b"
+    },
+    {
+      "id": "LAYOUT-v3-comparison",
+      "sha256": "bdb10d12998737b8b64bb32e49053b2d8cf7a32a8316b0297acb31978ab50a89"
+    },
+    {
+      "id": "LAYOUT-v3-training-log",
+      "sha256": "2936c24d4b2a469a79170c5a273899a34b12e949f1c984e507e74bf689f992de"
+    },
+    {
+      "id": "OCR-v6-config",
+      "sha256": "7b16719d5af3026d9cf26ade2b38d0deba9a94b7471f1874282d3184bdcbe502"
+    },
+    {
+      "id": "OCR-v6-initial-validation",
+      "sha256": "b3145eadf79a12d691ad59398abff1bba75b6b53f01932bc0d40006c232c47cb"
+    },
+    {
+      "id": "OCR-v6-selected-validation",
+      "sha256": "65be0f0295ca4de2daea52db7bd02de46fb02f71064036818278faef30204a1c"
+    },
+    {
+      "id": "OCR-v5-v6-fixed-evaluation",
+      "sha256": "65c350697b92406ab26b1a382483b910a2e5b7f27ba6fa7213ae49b73359d627"
+    },
+    {
+      "id": "OCR-det_v2_train",
+      "sha256": "e45ff5c48fb722e87fbd19dc5b72a71dbafae93cae5aaf7ed53268593e86e144"
+    },
+    {
+      "id": "OCR-rec_v2_train",
+      "sha256": "b571ba93b6200937db538067d9f2d60556b9abdf7aca30af5fdfd59022140c61"
+    },
+    {
+      "id": "OCR-v2-metrics",
+      "sha256": "a0586be60e25125833d8548611c28efdb721694f40fa2342c992ef8b3be34932"
+    },
+    {
+      "id": "OCR-v2-report",
+      "sha256": "b10b0f75d437782a9a2926e3aee3bdacd9e9ed92b161d0082a0b1dfa0e93922d"
+    },
+    {
+      "id": "FORMULA-pixel-aggregate",
+      "sha256": "2d0e6449be111530060664319edce5fa150d1ca0bcf362416541407af695fc6b"
+    }
+  ]
+}

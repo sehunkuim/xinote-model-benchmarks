@@ -1,0 +1,1095 @@
+[
+  {
+    "model": "OCR-v5",
+    "comparison": "pretrained-to-finetuned",
+    "cohort": "clean-crops",
+    "metric": "exact-match",
+    "n": 3493,
+    "n_evaluable": 3493,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 75.87,
+    "after": 86.89,
+    "delta": 11.019999999999996,
+    "relative_improvement_percent": 14.52484512982733,
+    "source_ids": [
+      "OCR-v2-metrics"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "OCR-v5",
+    "comparison": "pretrained-to-finetuned",
+    "cohort": "korean-crops",
+    "metric": "exact-match",
+    "n": 731,
+    "n_evaluable": 731,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 58.96,
+    "after": 85.5,
+    "delta": 26.54,
+    "relative_improvement_percent": 45.0135685210312,
+    "source_ids": [
+      "OCR-v2-metrics"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "OCR-v5",
+    "comparison": "pretrained-to-finetuned",
+    "cohort": "out-of-domain",
+    "metric": "exact-match",
+    "n": 1867,
+    "n_evaluable": 1867,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 54.47,
+    "after": 47.510000000000005,
+    "delta": -6.959999999999994,
+    "relative_improvement_percent": -12.77767578483568,
+    "source_ids": [
+      "OCR-v2-metrics"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "OCR-v5-det",
+    "comparison": "pretrained-to-finetuned",
+    "cohort": "clean-pages",
+    "metric": "Hmean",
+    "n": 139,
+    "n_evaluable": 139,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 92.75999999999999,
+    "after": 95.75,
+    "delta": 2.990000000000009,
+    "relative_improvement_percent": 3.223372143165167,
+    "source_ids": [
+      "OCR-v2-metrics"
+    ],
+    "status": "not-selected-for-e2e"
+  },
+  {
+    "model": "OCR-v5-det",
+    "comparison": "pretrained-to-finetuned",
+    "cohort": "diagram-pages",
+    "metric": "Hmean",
+    "n": 219,
+    "n_evaluable": 219,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 73.81,
+    "after": 80.56,
+    "delta": 6.75,
+    "relative_improvement_percent": 9.145102289662647,
+    "source_ids": [
+      "OCR-v2-metrics"
+    ],
+    "status": "not-selected-for-e2e"
+  },
+  {
+    "model": "OCR-v5-det",
+    "comparison": "det-only-change",
+    "cohort": "page-text",
+    "metric": "character-accuracy",
+    "n": 66,
+    "n_evaluable": 66,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 92.74,
+    "after": 92.24,
+    "delta": -0.5,
+    "relative_improvement_percent": -0.5391416864351951,
+    "source_ids": [
+      "OCR-v2-report"
+    ],
+    "status": "not-selected-for-e2e"
+  },
+  {
+    "model": "OCR-v5",
+    "comparison": "rec-only-change",
+    "cohort": "page-text",
+    "metric": "character-accuracy",
+    "n": 66,
+    "n_evaluable": 66,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 92.74,
+    "after": 93.46,
+    "delta": 0.7199999999999989,
+    "relative_improvement_percent": 0.7763640284666798,
+    "source_ids": [
+      "OCR-v2-report"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "same-model-domain-adaptation",
+    "cohort": "validation-all",
+    "metric": "exact-match",
+    "n": 9484,
+    "n_evaluable": 9484,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 85.28047237452552,
+    "after": 85.54407423028259,
+    "delta": 0.2636018557570736,
+    "relative_improvement_percent": 0.3090999010880423,
+    "source_ids": [
+      "OCR-v6-initial-validation",
+      "OCR-v6-selected-validation"
+    ],
+    "status": "candidate-validation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "same-model-domain-adaptation",
+    "cohort": "validation-all",
+    "metric": "CER",
+    "n": 9484,
+    "n_evaluable": 9484,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 5.010893246187364,
+    "after": 5.086166801302293,
+    "delta": 0.07527355511492928,
+    "relative_improvement_percent": -1.502198339032719,
+    "source_ids": [
+      "OCR-v6-initial-validation",
+      "OCR-v6-selected-validation"
+    ],
+    "status": "candidate-validation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "same-model-domain-adaptation",
+    "cohort": "validation-documents",
+    "metric": "exact-match",
+    "n": 1800,
+    "n_evaluable": 1800,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 72.88888888888889,
+    "after": 75.05555555555556,
+    "delta": 2.1666666666666714,
+    "relative_improvement_percent": 2.9725609756097624,
+    "source_ids": [
+      "OCR-v6-initial-validation",
+      "OCR-v6-selected-validation"
+    ],
+    "status": "candidate-validation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "same-model-domain-adaptation",
+    "cohort": "validation-documents",
+    "metric": "CER",
+    "n": 1800,
+    "n_evaluable": 1800,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 3.0005382131324003,
+    "after": 2.833692142088267,
+    "delta": -0.1668460710441333,
+    "relative_improvement_percent": 5.560538116591922,
+    "source_ids": [
+      "OCR-v6-initial-validation",
+      "OCR-v6-selected-validation"
+    ],
+    "status": "candidate-validation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "v5-to-v6-system-change",
+    "cohort": "fixed-multilingual",
+    "metric": "exact-match",
+    "n": 21366,
+    "n_evaluable": 21366,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 41.7345314986427,
+    "after": 61.25152110830291,
+    "delta": 19.516989609660207,
+    "relative_improvement_percent": 46.76460693058203,
+    "source_ids": [
+      "OCR-v5-v6-fixed-evaluation"
+    ],
+    "status": "candidate-evaluation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "v5-to-v6-system-change",
+    "cohort": "fixed-multilingual",
+    "metric": "CER",
+    "n": 21366,
+    "n_evaluable": 21366,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 39.59579304198437,
+    "after": 34.71569410892309,
+    "delta": -4.880098933061284,
+    "relative_improvement_percent": 12.324791494608524,
+    "source_ids": [
+      "OCR-v5-v6-fixed-evaluation"
+    ],
+    "status": "candidate-evaluation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "v5-to-v6-system-change",
+    "cohort": "fixed-documents",
+    "metric": "exact-match",
+    "n": 5367,
+    "n_evaluable": 5367,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 69.14477361654555,
+    "after": 72.94577976523198,
+    "delta": 3.801006148686426,
+    "relative_improvement_percent": 5.497170573969294,
+    "source_ids": [
+      "OCR-v5-v6-fixed-evaluation"
+    ],
+    "status": "candidate-evaluation"
+  },
+  {
+    "model": "OCR-v6",
+    "comparison": "v5-to-v6-system-change",
+    "cohort": "fixed-documents",
+    "metric": "CER",
+    "n": 5367,
+    "n_evaluable": 5367,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 4.9234688506642525,
+    "after": 4.7055603511800745,
+    "delta": -0.217908499484178,
+    "relative_improvement_percent": 4.425914047466326,
+    "source_ids": [
+      "OCR-v5-v6-fixed-evaluation"
+    ],
+    "status": "candidate-evaluation"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "pdf144-display",
+    "metric": "LaTeX-string-exact",
+    "n": 3000,
+    "n_evaluable": 3000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 19.866666666666667,
+    "after": 31.366666666666664,
+    "delta": 11.499999999999996,
+    "relative_improvement_percent": 57.885906040268445,
+    "source_ids": [
+      "formula_official_target",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "pdf144-display",
+    "metric": "LaTeX-string-exact",
+    "n": 3000,
+    "n_evaluable": 3000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 23.133333333333333,
+    "after": 31.366666666666664,
+    "delta": 8.23333333333333,
+    "relative_improvement_percent": 35.5907780979827,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "pdf144-display",
+    "metric": "rendered-pixel-exact",
+    "n": 3000,
+    "n_evaluable": 3000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 38.63333333333333,
+    "after": 50.96666666666667,
+    "delta": 12.333333333333336,
+    "relative_improvement_percent": 31.92407247627266,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "pdf144-inline",
+    "metric": "LaTeX-string-exact",
+    "n": 2000,
+    "n_evaluable": 2000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 30.349999999999998,
+    "after": 55.60000000000001,
+    "delta": 25.25000000000001,
+    "relative_improvement_percent": 83.19604612850087,
+    "source_ids": [
+      "formula_official_target",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "pdf144-inline",
+    "metric": "LaTeX-string-exact",
+    "n": 2000,
+    "n_evaluable": 2000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 31.05,
+    "after": 55.60000000000001,
+    "delta": 24.550000000000008,
+    "relative_improvement_percent": 79.06602254428343,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "pdf144-inline",
+    "metric": "rendered-pixel-exact",
+    "n": 2000,
+    "n_evaluable": 2000,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 43.1,
+    "after": 82.6,
+    "delta": 39.49999999999999,
+    "relative_improvement_percent": 91.6473317865429,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "printed-simple",
+    "metric": "LaTeX-string-exact",
+    "n": 6762,
+    "n_evaluable": 6762,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 27.40313516711032,
+    "after": 41.94025436261461,
+    "delta": 14.537119195504289,
+    "relative_improvement_percent": 53.04910955207771,
+    "source_ids": [
+      "formula_official",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "printed-simple",
+    "metric": "LaTeX-string-exact",
+    "n": 6762,
+    "n_evaluable": 6762,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 44.36557231588287,
+    "after": 41.94025436261461,
+    "delta": -2.4253179532682623,
+    "relative_improvement_percent": -5.466666666666663,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "printed-simple",
+    "metric": "rendered-pixel-exact",
+    "n": 6762,
+    "n_evaluable": 6761,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 67.62313267268155,
+    "after": 63.466942759946754,
+    "delta": -4.156189912734796,
+    "relative_improvement_percent": -6.146106736657908,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "printed-complex",
+    "metric": "LaTeX-string-exact",
+    "n": 5921,
+    "n_evaluable": 5921,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 4.475595338625232,
+    "after": 11.974328660699205,
+    "delta": 7.498733322073973,
+    "relative_improvement_percent": 167.54716981132074,
+    "source_ids": [
+      "formula_official",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "printed-complex",
+    "metric": "LaTeX-string-exact",
+    "n": 5921,
+    "n_evaluable": 5921,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 12.109440972808647,
+    "after": 11.974328660699205,
+    "delta": -0.13511231210944175,
+    "relative_improvement_percent": -1.1157601115760176,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "printed-complex",
+    "metric": "rendered-pixel-exact",
+    "n": 5921,
+    "n_evaluable": 5880,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 21.6156462585034,
+    "after": 21.428571428571427,
+    "delta": -0.18707482993197289,
+    "relative_improvement_percent": -0.8654602675059013,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "screen-capture",
+    "metric": "LaTeX-string-exact",
+    "n": 4742,
+    "n_evaluable": 4742,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 33.509067903838044,
+    "after": 29.354702657106706,
+    "delta": -4.154365246731338,
+    "relative_improvement_percent": -12.397734424166144,
+    "source_ids": [
+      "formula_official",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "screen-capture",
+    "metric": "LaTeX-string-exact",
+    "n": 4742,
+    "n_evaluable": 4742,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 34.647827920708565,
+    "after": 29.354702657106706,
+    "delta": -5.293125263601858,
+    "relative_improvement_percent": -15.27693244065734,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "screen-capture",
+    "metric": "rendered-pixel-exact",
+    "n": 4742,
+    "n_evaluable": 4729,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 39.606682173821106,
+    "after": 35.800380630154365,
+    "delta": -3.8063015436667413,
+    "relative_improvement_percent": -9.610250934329962,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "official-pretrained-to-r1e3",
+    "cohort": "handwritten",
+    "metric": "LaTeX-string-exact",
+    "n": 6332,
+    "n_evaluable": 6332,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 32.64371446620341,
+    "after": 33.954516740366394,
+    "delta": 1.310802274162981,
+    "relative_improvement_percent": 4.015481373971938,
+    "source_ids": [
+      "formula_official",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "handwritten",
+    "metric": "LaTeX-string-exact",
+    "n": 6332,
+    "n_evaluable": 6332,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 36.039166140240056,
+    "after": 33.954516740366394,
+    "delta": -2.084649399873662,
+    "relative_improvement_percent": -5.784399649430336,
+    "source_ids": [
+      "formula_previous",
+      "formula_after"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Formula",
+    "comparison": "previous-production-to-r1e3",
+    "cohort": "handwritten",
+    "metric": "rendered-pixel-exact",
+    "n": 6332,
+    "n_evaluable": 6316,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 36.28879037365421,
+    "after": 34.21469284357188,
+    "delta": -2.0740975300823266,
+    "relative_improvement_percent": -5.715532286212904,
+    "source_ids": [
+      "FORMULA-pixel-aggregate"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "all-domains",
+    "metric": "source-macro-AP",
+    "n": 2086,
+    "n_evaluable": 2086,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 41.586408963590756,
+    "after": 71.13410992111702,
+    "delta": 29.54770095752626,
+    "relative_improvement_percent": 71.05134031504264,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "all-domains",
+    "metric": "source-macro-region-F1",
+    "n": 2086,
+    "n_evaluable": 2086,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 78.07839393249786,
+    "after": 88.54520464607525,
+    "delta": 10.466810713577388,
+    "relative_improvement_percent": 13.405514876018579,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "document-figures",
+    "metric": "canonical-AP",
+    "n": 213,
+    "n_evaluable": 213,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 47.98027304395481,
+    "after": 76.93133827066355,
+    "delta": 28.951065226708735,
+    "relative_improvement_percent": 60.3395174516548,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "posters",
+    "metric": "canonical-AP",
+    "n": 68,
+    "n_evaluable": 68,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 56.37182122291112,
+    "after": 83.04014702438919,
+    "delta": 26.668325801478062,
+    "relative_improvement_percent": 47.30790175471445,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "general-documents",
+    "metric": "canonical-AP",
+    "n": 1004,
+    "n_evaluable": 1004,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 39.26950440002843,
+    "after": 78.31660473567338,
+    "delta": 39.04710033564495,
+    "relative_improvement_percent": 99.43364687743978,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "presentations",
+    "metric": "canonical-AP",
+    "n": 166,
+    "n_evaluable": 166,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 54.78521107581692,
+    "after": 71.58673959757658,
+    "delta": 16.801528521759664,
+    "relative_improvement_percent": 30.667999979972937,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "reports",
+    "metric": "canonical-AP",
+    "n": 80,
+    "n_evaluable": 80,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 40.92037816608791,
+    "after": 71.57899708891378,
+    "delta": 30.658618922825873,
+    "relative_improvement_percent": 74.92261874606453,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "scans-text-only",
+    "metric": "canonical-AP",
+    "n": 80,
+    "n_evaluable": 80,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 10.04940199791371,
+    "after": 56.35354607900026,
+    "delta": 46.30414408108655,
+    "relative_improvement_percent": 460.7651688199899,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "Layout",
+    "comparison": "official-pretrained-to-large-v3",
+    "cohort": "slides",
+    "metric": "canonical-AP",
+    "n": 475,
+    "n_evaluable": 475,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 41.7282728384224,
+    "after": 60.13139665160243,
+    "delta": 18.40312381318003,
+    "relative_improvement_percent": 44.10228979387537,
+    "source_ids": [
+      "LAYOUT-v3-comparison"
+    ],
+    "status": "candidate-internal-heldout"
+  },
+  {
+    "model": "ASR-v27",
+    "comparison": "v26m2-to-v27",
+    "cohort": "MN-online-speech",
+    "metric": "WER",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 52.879581151832454,
+    "after": 40.40139616055846,
+    "delta": -12.478184991273991,
+    "relative_improvement_percent": 23.59735973597359,
+    "source_ids": [
+      "ASR-v26-eval",
+      "ASR-v27-eval"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "ASR-v27",
+    "comparison": "v26m2-to-v27",
+    "cohort": "MN-broadcast",
+    "metric": "WER",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 17.747440273037544,
+    "after": 16.83731513083049,
+    "delta": -0.910125142207054,
+    "relative_improvement_percent": 5.12820512820513,
+    "source_ids": [
+      "ASR-v26-eval",
+      "ASR-v27-eval"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "ASR-v27",
+    "comparison": "v26m2-to-v27",
+    "cohort": "MN-subtitled-speech",
+    "metric": "WER",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 52.115583075335394,
+    "after": 27.966976264189885,
+    "delta": -24.14860681114551,
+    "relative_improvement_percent": 46.336633663366335,
+    "source_ids": [
+      "ASR-v26-eval",
+      "ASR-v27-eval"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "ASR-v27",
+    "comparison": "v26m2-to-v27",
+    "cohort": "MN-read-speech",
+    "metric": "WER",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 23.76142376142376,
+    "after": 28.619528619528616,
+    "delta": 4.858104858104856,
+    "relative_improvement_percent": -20.445344129554645,
+    "source_ids": [
+      "ASR-v26-eval",
+      "ASR-v27-eval"
+    ],
+    "status": "deployed-weights-matched"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-lecture",
+    "metric": "script_cer",
+    "n": 914,
+    "n_evaluable": 914,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 9.44005743000718,
+    "after": 7.690236898779612,
+    "delta": -1.7498205312275674,
+    "relative_improvement_percent": 18.536121673003812,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-lecture",
+    "metric": "mixed_cer",
+    "n": 914,
+    "n_evaluable": 914,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 9.766178554558337,
+    "after": 8.133561643835616,
+    "delta": -1.6326169107227209,
+    "relative_improvement_percent": 16.717049576783555,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-EN-code-switch",
+    "metric": "script_cer",
+    "n": 600,
+    "n_evaluable": 600,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 28.202162724801944,
+    "after": 21.367027120800326,
+    "delta": -6.835135604001618,
+    "relative_improvement_percent": 24.23621078531884,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-EN-code-switch",
+    "metric": "mixed_cer",
+    "n": 600,
+    "n_evaluable": 600,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 33.54732367485035,
+    "after": 25.717879760562155,
+    "delta": -7.829443914288191,
+    "relative_improvement_percent": 23.338505301267134,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-heldout",
+    "metric": "script_cer",
+    "n": 600,
+    "n_evaluable": 600,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 18.84141926140478,
+    "after": 14.89500362056481,
+    "delta": -3.9464156408399713,
+    "relative_improvement_percent": 20.945426594926982,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-heldout",
+    "metric": "mixed_cer",
+    "n": 600,
+    "n_evaluable": 600,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 22.8717328495599,
+    "after": 24.558220788819458,
+    "delta": 1.6864879392595569,
+    "relative_improvement_percent": -7.373678025851935,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-read-speech",
+    "metric": "script_cer",
+    "n": 457,
+    "n_evaluable": 457,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 5.31189844440976,
+    "after": 3.5065813433224076,
+    "delta": -1.8053171010873523,
+    "relative_improvement_percent": 33.98628795298727,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-read-speech",
+    "metric": "mixed_cer",
+    "n": 457,
+    "n_evaluable": 457,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 5.405546017376828,
+    "after": 3.5065813433224076,
+    "delta": -1.8989646740544206,
+    "relative_improvement_percent": 35.129932627526486,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-conversation",
+    "metric": "script_cer",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 14.08207343412527,
+    "after": 10.41036717062635,
+    "delta": -3.671706263498921,
+    "relative_improvement_percent": 26.073619631901845,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "KO-conversation",
+    "metric": "mixed_cer",
+    "n": 100,
+    "n_evaluable": 100,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 14.224507283633248,
+    "after": 10.454155955441301,
+    "delta": -3.7703513281919463,
+    "relative_improvement_percent": 26.50602409638555,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "ASR-0.6B",
+    "comparison": "original-to-LoRA6000",
+    "cohort": "EN-read-speech",
+    "metric": "wer",
+    "n": 240,
+    "n_evaluable": 240,
+    "unit": "percent",
+    "higher_is_better": false,
+    "before": 2.239229024943311,
+    "after": 1.899092970521542,
+    "delta": -0.34013605442176886,
+    "relative_improvement_percent": 15.189873417721525,
+    "source_ids": [
+      "asr06_before",
+      "asr06_after"
+    ],
+    "status": "historical"
+  },
+  {
+    "model": "JEV",
+    "comparison": "imajev-adapter-to-domain-adapter",
+    "cohort": "selection-dev",
+    "metric": "decision-accuracy",
+    "n": 300,
+    "n_evaluable": 300,
+    "unit": "percent",
+    "higher_is_better": true,
+    "before": 33.33333333333333,
+    "after": 72.33333333333334,
+    "delta": 39.000000000000014,
+    "relative_improvement_percent": 117.00000000000006,
+    "source_ids": [
+      "JEV-v3-log"
+    ],
+    "status": "checkpoint-selection-dev"
+  },
+  {
+    "model": "JEV",
+    "comparison": "imajev-adapter-to-domain-adapter",
+    "cohort": "selection-dev",
+    "metric": "cross-entropy",
+    "n": 300,
+    "n_evaluable": 300,
+    "unit": "loss",
+    "higher_is_better": false,
+    "before": 3.431519667369236,
+    "after": 0.9090444434775661,
+    "delta": -2.52247522389167,
+    "relative_improvement_percent": 73.50898343606225,
+    "source_ids": [
+      "JEV-v3-log"
+    ],
+    "status": "checkpoint-selection-dev"
+  }
+]
